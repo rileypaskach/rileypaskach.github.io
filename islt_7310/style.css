@@ -2,8 +2,10 @@
 
 h1 {
     text-align:center;
-    color: #003366;
+    color: #333333;
     font-family: Georgia, serif;
+    border: 3px solid #2c83ec;
+    background: #d4e9fe;
 }
 
 h3 {
@@ -14,6 +16,7 @@ h3 {
 body {
     font-size: 100%;
     margin: 2em;
+    background:  #d4e9fe;
 }
 
 blockquote {
@@ -28,6 +31,12 @@ p {
 
 img {
     float:right;
+    margin:auto;
+    padding: 1em;
+}
+
+footer {
+    border-top: 3px solid #2c83ec;
 }
 
 /* ID-specific modifications */
@@ -65,3 +74,4 @@ a {text-decoration: none;}
 body li {font-size: 10pt;}
 body h3 {font-size: 16pt;}
 body p {font-size: 14pt;}
+footer p {text-align: center}
