@@ -1,11 +1,52 @@
+/*CSS for Index.html*/
+
 h1 {
     text-align:center;
     color: #003366;
+    font-family: Georgia, serif;
 }
+
+h3 {
+  color:darkblue;
+  font-size: 16pt;
+}
+
+body {
+    font-size: 100%;
+    margin: 2em;
+}
+
+blockquote {
+    text-align: center;
+    font-size: 14pt;
+}
+
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+}
+
+img {
+    float:right;
+}
+
+/* ID-specific modifications */
 
 #copyright {
     font-size: 14pt;
     text-align: center;    
+}
+
+li.in-progress {
+    color:coral
+}
+
+li.complete {
+    color:cornflowerblue;
+}
+
+li.minors {
+    color:black;
 }
 
 /* CSS for changing the hyperlinks on the page. "a" is for Anchor */
