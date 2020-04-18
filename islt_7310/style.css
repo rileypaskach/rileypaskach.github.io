@@ -2,3 +2,25 @@ h1 {
     text-align:center;
     color: #003366;
 }
+
+#copyright {
+    font-size: 14pt;
+    text-align: center;    
+}
+
+/* CSS for changing the hyperlinks on the page. "a" is for Anchor */
+a:link {color:cornflowerblue;}
+
+a:hover {color:darkblue;}
+
+a:focus {color:darkorange;}
+
+a:visited {color: blueviolet;}
+
+a:active {color: darkorange;}
+
+a {text-decoration: none;}
+/* the 3 additional properties from CH.3 are below*/
+body li {font-size: 10pt;}
+body h3 {font-size: 16pt;}
+body p {font-size: 14pt;}
