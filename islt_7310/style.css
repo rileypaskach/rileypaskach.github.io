@@ -1,4 +1,5 @@
 /*CSS for Index.html*/
+/* Passed validation on 4/19/20*/
 
 h1 {
     text-align:center;
@@ -8,6 +9,10 @@ h1 {
     background: #d4e9fe;
 }
 
+h2{
+    color:darkblue; 
+}
+
 h3 {
   color:darkblue;
   font-size: 16pt;
@@ -15,7 +20,7 @@ h3 {
 
 body {
     font-size: 100%;
-    margin: 2em;
+    margin: 15px;
     background:  #d4e9fe;
 }
 
@@ -37,6 +42,7 @@ img {
 
 footer {
     border-top: 3px solid #2c83ec;
+    padding: 5px;
 }
 
 /* ID-specific modifications */
@@ -59,7 +65,7 @@ li.minors {
 }
 
 /* CSS for changing the hyperlinks on the page. "a" is for Anchor */
-a:link {color:cornflowerblue;}
+a:link {color:firebrick;}
 
 a:hover {color:darkblue;}
 
@@ -71,7 +77,7 @@ a:active {color: darkorange;}
 
 a {text-decoration: none;}
 /* the 3 additional properties from CH.3 are below*/
-body li {font-size: 10pt;}
+body li {font-size: 12pt;}
 body h3 {font-size: 16pt;}
 body p {font-size: 14pt;}
 footer p {text-align: center}
