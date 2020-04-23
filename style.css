@@ -1,0 +1,83 @@
+/*CSS for Index.html*/
+/* Passed validation on 4/19/20*/
+
+h1 {
+    text-align:center;
+    color: #333333;
+    font-family: Georgia, serif;
+    border: 3px solid #2c83ec;
+    background: #d4e9fe;
+}
+
+h2{
+    color:darkblue; 
+}
+
+h3 {
+  color:darkblue;
+  font-size: 16pt;
+}
+
+body {
+    font-size: 100%;
+    margin: 15px;
+    background:  #d4e9fe;
+}
+
+blockquote {
+    text-align: center;
+    font-size: 14pt;
+}
+
+p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+}
+
+img {
+    float:right;
+    margin:auto;
+    padding: 1em;
+}
+
+footer {
+    border-top: 3px solid #2c83ec;
+    padding: 5px;
+}
+
+/* ID-specific modifications */
+
+#copyright {
+    font-size: 14pt;
+    text-align: center;    
+}
+
+li.in-progress {
+    color:coral
+}
+
+li.complete {
+    color:cornflowerblue;
+}
+
+li.minors {
+    color:black;
+}
+
+/* CSS for changing the hyperlinks on the page. "a" is for Anchor */
+a:link {color:firebrick;}
+
+a:hover {color:darkblue;}
+
+a:focus {color:darkorange;}
+
+a:visited {color: blueviolet;}
+
+a:active {color: darkorange;}
+
+a {text-decoration: none;}
+/* the 3 additional properties from CH.3 are below*/
+body li {font-size: 12pt;}
+body h3 {font-size: 16pt;}
+body p {font-size: 14pt;}
+footer p {text-align: center}
