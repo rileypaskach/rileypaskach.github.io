@@ -1,83 +1,122 @@
 /*CSS for Index.html*/
 /* Passed validation on 4/19/20*/
 
+
 h1 {
     text-align:center;
-    color: #333333;
+    color: #556A80;
     font-family: Georgia, serif;
-    border: 3px solid #2c83ec;
-    background: #d4e9fe;
+    border-bottom: 3px solid #ABD5FF;
+    flex-grow:1;
+    justify-content: center;
 }
 
 h2{
-    color:darkblue; 
+    color: #556A80; 
+    text-align:center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em; /* This combined with the auto margins centers the H2 element */
+    text-decoration: underline;
 }
+
 
 h3 {
-  color:darkblue;
-  font-size: 16pt;
+    color:#556A80;
+    font-size:16pt;
+    display: flex;
 }
+
+body ol {
+    flex:auto;
+    
+}
+
 
 body {
-    font-size: 100%;
-    margin: 15px;
-    background:  #d4e9fe;
+    font-size: 12pt;
+    margin: 2em;
+    background: #F7FBFF;
+    color: #556A80;
 }
 
+.flex-container {
+    display: flex;
+}
+
+.flex-lists {
+    display:flex;
+}
+
+
+#resume_link {
+    text-align: center;
+    font-size: 16pt;
+}
+
+main p {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14pt;
+    margin: 4px;
+    padding: 4px;
+    border-bottom: 3px solid #ABD5FF;
+    width: auto;
+    display: flex;
+    flex-grow:2;
+    
+    
+}
+
+p:first-letter {font-weight: bold;}
+
+img {
+    width: auto;
+    float:left;
+    padding: 1em;
+    display: flex;
+    
+}
+
+/*Quote at bottom of page*/
 blockquote {
     text-align: center;
     font-size: 14pt;
-}
-
-p {
-    font-family: "Times New Roman", Times, serif;
-    font-size: 12pt;
-}
-
-img {
-    float:right;
-    margin:auto;
-    padding: 1em;
+    display: flex;
+    justify-content: cente;
 }
 
 footer {
-    border-top: 3px solid #2c83ec;
+    border-top: 3px solid #ABD5FF;
     padding: 5px;
+    text-align: center;
 }
 
-/* ID-specific modifications */
-
-#copyright {
-    font-size: 14pt;
-    text-align: center;    
-}
+/* Class-specific modifications */
 
 li.in-progress {
-    color:coral
+    color: #686F83;
 }
 
 li.complete {
-    color:cornflowerblue;
+    color:#686F83;
 }
 
 li.minors {
-    color:black;
+    color:#618BFF;
 }
 
+
 /* CSS for changing the hyperlinks on the page. "a" is for Anchor */
-a:link {color:firebrick;}
+a:link {color:#8AC0FF;}
 
-a:hover {color:darkblue;}
+a:hover {color:#C2856D;}
 
-a:focus {color:darkorange;}
+a:focus {color:#C2856D;}
 
-a:visited {color: blueviolet;}
+a:visited {color: #A76EFF;}
 
-a:active {color: darkorange;}
+a:active {color: #C2856D;}
 
 a {text-decoration: none;}
-/* the 3 additional properties from CH.3 are below*/
-body li {font-size: 12pt;}
-body h3 {font-size: 16pt;}
-body p {font-size: 14pt;}
-footer p {text-align: center}
+
+

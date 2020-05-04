@@ -1,0 +1,117 @@
+/*CSS for nav menu*/
+
+/*format and position the main navigation menu*/
+nav {
+    width: auto;
+    height: 310px;
+    float: left;
+    display:flex;
+    flex-direction:column;
+    flex-grow: 1;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;    
+}
+
+nav>ul li {
+width: 150px; /*this is important to set so our drop-down doesn't go across the page*/
+position:relative; /*we must add a position to our main navigation bar so we can position a drop-down properly */
+text-align: center;
+font-weight: bold;
+color: dimgray;
+}
+nav ul li {
+margin-bottom: 2px;
+}
+nav a {
+text-decoration: none;
+display: block;
+border: 3px;
+padding: 15px 15px 15px 15px;
+margin-right: 10px;
+}
+
+/*format all navigation <a> elements*/
+nav a:link{
+    color: #F7FBFF;
+    background-color: #ABBBCC;
+}
+nav a:hover, nav a:focus {
+    background-color: #ABD5FF;
+}
+nav a.current{
+    background-color: #7C7E80;
+}
+
+nav a.dropdown {
+    
+}
+
+/*position sub-menu or drop-down*/
+nav ul>li ul {
+position: absolute;
+margin-top: 0;
+margin-left: 100%;
+display: none;
+}
+
+/*special hover to display the drop-down*/
+nav>ul>li:hover>ul{
+    display:block;
+    
+}
+
+
+
+
+/* Mobile menu adjustment */
+
+
+}
+#menu-icon {
+	background: url(images/menu-icon.png) no-repeat center;
+	display: hidden;
+	width: 32px;
+	height: 32px;
+}
+
+@media only screen and (max-width: 640px) {
+	header {
+		position: absolute;
+	}
+	#menu-icon {
+		display: inline-block;
+	}
+	nav ul, nav:active ul {
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: 99cccc;
+		right: 10px;
+		top: 65px;
+		width: 35%;
+	}
+	nav:hover ul {
+		display: block;
+	}
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 15px 0;
+		margin: 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
