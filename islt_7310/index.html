@@ -16,7 +16,7 @@ School/Term:  University of Missouri, Spring 2020
 
 Developed: April 10, 2020
 
-Validated : 4/28/20 
+Validated : 5/8/20 
 
 ******************************************************************************
 
@@ -30,6 +30,13 @@ Validated : 4/28/20
         
         <link rel="stylesheet"
         href="nav.css">
+        
+        <style>
+            html {font-size:100%;}
+        </style>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
 <body>   
@@ -39,12 +46,14 @@ Validated : 4/28/20
   
     <div class = flex-container>
     
-        <aside>
+        <div>
                 <nav>
-                    <a href = "#"  id = "menu-icon"></a>
-                    <ul>
-                        <li><a href="../islt_7310/index.html" class="current">Home</a></li>
-                        <li><a href="placeholder" class="dropdown">Experience</a>
+                    <!-- <label for = "toggle">&#9776;</label> -->
+                    <label for = "menu-icon">&#9776;</label>
+                    <input type="checkbox" id="menu-icon"/>
+                    <ul class = "menu">
+                        <li><a href="../islt_7310/index.html" id="current">Home</a></li>
+                        <li><a href="placeholder" id="dropdown">Experience</a>
                             <ul>
                                 <li><a href="#">Project 1</a></li>
                                 <li><a href="#">Project 2</a></li>
@@ -58,7 +67,7 @@ Validated : 4/28/20
 
                     </ul>
                 </nav>
-            </aside>
+            </div>
         <div>
         
             <p>Hello all, my name is Riley. I am a full-time student at MU while also working a full-time digital marketing job here in Columbia. I spent a long time thinking I’d go into Biology for a living, but recently I decided that I wanted to pursue other interests as a career. I work with landing pages, domains, and web applications every day, so I’m hoping that this class will give me more insight into what I’m already doing, while also letting me do more on the development side of things. I’m currently also learning Python and have tried learning HTML in the past, but it wasn’t as applicable to me at that time and I didn’t stick with it. At the moment the only hobby I do much of is playing video games, but when I have enough spare time on my hands I like to tinker with basic electronics like microcontrollers.
@@ -67,7 +76,7 @@ Validated : 4/28/20
             <p>In April 2019 I started an internship at Cerner, one of the Nation’s leading providers of Electronic Medical Record software. I then transitioned to a full-time job in marketing here in Columbia. In January of 2020, I accepted a Paid Search Specialist position at Caledon Virtual, a marketing company here in Columbia Missouri.</p>
         </div>
 
-            <div><img src="images/Profile_Pic.jpg" alt="Picture of me in front of a brick wall" width="169" height="225"></div>
+            <div><img src="images/Profile_Pic.jpg" alt="Picture of me in front of a brick wall" width="169" height="225" id = "headshot"></div>
 
     </div>
         

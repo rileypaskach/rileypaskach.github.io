@@ -1,6 +1,10 @@
 /*CSS for nav menu*/
 
+/* Validated on 5/8/20 */
+
 /*format and position the main navigation menu*/
+
+
 nav {
     width: auto;
     height: 310px;
@@ -23,37 +27,44 @@ text-align: center;
 font-weight: bold;
 color: dimgray;
 }
+
+/*
 nav ul li {
 margin-bottom: 2px;
-}
+}*/
+
 nav a {
 text-decoration: none;
 display: block;
 border: 3px;
 padding: 15px 15px 15px 15px;
 margin-right: 10px;
+margin-bottom: 3px;
 }
 
 /*format all navigation <a> elements*/
 nav a:link{
     color: #F7FBFF;
     background-color: #ABBBCC;
+/*    color: #556A80;*/
 }
 nav a:hover, nav a:focus {
     background-color: #ABD5FF;
 }
-nav a.current{
+
+#current{
     background-color: #7C7E80;
+    color: #F7FBFF;
 }
 
-nav a.dropdown {
+#dropdown {
     
 }
 
 /*position sub-menu or drop-down*/
 nav ul>li ul {
 position: absolute;
-margin-top: 0;
+margin-top: -49px; /*I adjusted this so your nav drop-down lines up better*/
 margin-left: 100%;
 display: none;
 }
@@ -67,42 +78,85 @@ nav>ul>li:hover>ul{
 
 
 
+nav {
+	float: left;
+	padding: 0%;
+}
+#menu-icon {
+	/*background: url(images/menu-icon.png) no-repeat center;*/
+	display: none; /*this should be none instead of hidden... */
+/*	width: 32px;*/
+/*	height: 32px;     Removed because this is the checkbox and doesn't need defined dimensions   */
+    
+}
+
+label {
+    font-size: 2em;
+    display: none;
+}
+
+
+
 /* Mobile menu adjustment */
 
 
-}
-#menu-icon {
-	background: url(images/menu-icon.png) no-repeat center;
-	display: hidden;
-	width: 32px;
-	height: 32px;
-}
+/*}*/
 
 @media only screen and (max-width: 640px) {
-	header {
-		position: absolute;
+    body { /*always organize by the largest container */
+        font-size: 1rem;
+    }
+    
+    header {
+		position: relative; /*the position can't be absolute because you haven't given a position to the container for header-- changing this to relative fixes this issues*/
 	}
+    
 	#menu-icon {
-		display: inline-block;
-	}
-	nav ul, nav:active ul {
 		display: none;
-		position: absolute;
-		padding: 20px;
-		background: 99cccc;
-		right: 10px;
-		top: 65px;
-		width: 35%;
+        position: absolute;
 	}
-	nav:hover ul {
+    
+    label {
+        display:flex;
+        width: 32px;
+        cursor: pointer;
+    }
+    
+   
+	ul.menu {
+		display: none;
+/*		position: ;*/
+		padding: 2px;
+		left: 0;
+		top: 76px;
+		width: 100%;
+        margin: 0;
+	}
+   
+	/*nav:hover ul {
 		display: block;
-	}
+	}*/
+ 
+    /*
 	nav li {
 		text-align: center;
-		width: 100%;
-		padding: 15px 0;
-		margin: 0;
+		width: auto;
+		padding: 2px;
+		margin: 0px;
 	}
+    */
+    
+    #menu-icon:checked + ul.menu{
+        display:block;
+        position:inherit;
+		padding: 2px;
+		left: 0;
+		top: 76px;
+		width: auto;
+        margin: 0;
+    }
+    
+
 }
 
 

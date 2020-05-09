@@ -1,5 +1,5 @@
 /*CSS for Index.html*/
-/* Passed validation on 4/19/20*/
+/* Passed validation on 5/8/20 */
 
 
 h1 {
@@ -16,14 +16,14 @@ h2{
     text-align:center;
     margin-left: auto;
     margin-right: auto;
-    width: 8em; /* This combined with the auto margins centers the H2 element */
-    text-decoration: underline;
+/*    width: 8em;  This combined with the auto margins centers the H2 element - removed becasue it wasn't needed?? */
+
 }
 
 
 h3 {
     color:#556A80;
-    font-size:16pt;
+    font-size:1.5em;
     display: flex;
 }
 
@@ -34,14 +34,16 @@ body ol {
 
 
 body {
-    font-size: 12pt;
-    margin: 2em;
+    font-size: 1rem;
+    margin: 1em;
     background: #F7FBFF;
     color: #556A80;
 }
 
 .flex-container {
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .flex-lists {
@@ -56,33 +58,57 @@ body {
 
 main p {
     font-family: "Times New Roman", Times, serif;
-    font-size: 14pt;
+    font-size: 1rem;
     margin: 4px;
     padding: 4px;
     border-bottom: 3px solid #ABD5FF;
     width: auto;
     display: flex;
     flex-grow:2;
-    
-    
+/*    background-color:*/
 }
 
 p:first-letter {font-weight: bold;}
 
-img {
-    width: auto;
-    float:left;
-    padding: 1em;
+#headshot {
+    max-height: 250px;
+    min-height: 200px;
+    float:right;
+    padding: 2em;
     display: flex;
+    object-fit: contain;
     
+}
+
+#logo_links {
+    justify-content: center;
+    align-items: baseline;
+    display: flex
+}
+
+#linkedin {
+    max-height: 50px;
+    min-height: 20px;
+    padding: 5px;
+/*
+    display:flex;
+    justify-content: center;
+*/
+    object-fit: contain;
+}
+
+#email_symbol {
+    padding: 5px;
+    font-size: 5rem;
+    justify-content: center;
 }
 
 /*Quote at bottom of page*/
 blockquote {
     text-align: center;
-    font-size: 14pt;
+    font-size: 12pt;
     display: flex;
-    justify-content: cente;
+    justify-content: center;
 }
 
 footer {
@@ -102,7 +128,7 @@ li.complete {
 }
 
 li.minors {
-    color:#618BFF;
+    color:#556A80;
 }
 
 

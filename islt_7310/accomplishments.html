@@ -13,11 +13,12 @@
         href="nav.css">
     
     <style> 
-        h2 {
-            color:darkblue; 
-            text-align: center;
+        html {
+            font-size: 100%;
         }
     </style>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
                <!--
 
@@ -44,59 +45,81 @@ Validated: 4/28/20
     
 <body>
     
-    <aside id = "sidebar">
-            <nav id="nav_list">
-                <ul>
-                    <li><a href="../islt_7310/index.html" class="current">Home</a></li>
-                    <li><a href="placeholder" class="dropdown">Experience</a>
+    <header><h1>Professional Accomplishments</h1></header>
+    
+    <div class = flex-container>
+
+        <div>
+            <nav>
+                <!-- <label for = "toggle">&#9776;</label> -->
+                <label for = "menu-icon">&#9776;</label>
+                <input type="checkbox" id="menu-icon"/>
+                <ul class = "menu">
+                    <li><a href="../islt_7310/index.html">Home</a></li>
+                    <li><a href="placeholder" id="dropdown">Experience</a>
                         <ul>
                             <li><a href="#">Project 1</a></li>
                             <li><a href="#">Project 2</a></li>
                             <li><a href="#">Project 3</a></li>
                         </ul>
                     </li>    
-                    <li><a href="../islt_7310/accomplishments.html">Accomplishments</a></li>
+                    <li><a href="../islt_7310/accomplishments.html" id= "current">Accomplishments</a></li>
                     <li><a href="../islt_7310/resume.html">Resume</a></li>
                     <li><a href="../islt_7310/personal_reflection.html">Reflection</a></li>
                     <li><a href="#contact">Contact</a></li>
 
                 </ul>
             </nav>
-    </aside>
+        </div>
+
     
-    <h1>Professional Accomplishments</h1>
-    <h2>Consultant Site Intern</h2>
-    <p>In April 2019, I started an internship at <strong>Cerner</strong>, one of the Nation’s leading providers of Electronic Medical Record. While there I worked mainly on ePrescribe, the ability for a provider to send scripts electronically instead of by fax or calling it in. I spent time working with other teams as well and tried to get a firm grasp of how the workflows operated. I used this understanding to create a guide to pass on to the interns who followed in my footsteps, so that they would have an easier time getting up to speed with the complicated system than I did.
-        </p>
-    <h2>Paid Search Specialist</h2>
-    <p>In January 2020, I started a full-time job at <strong>Caledon Virtual</strong> as a paid search specialist. This job involves data-analysis and knowledge of how to create and monitor ad campaigns on Google's advertising networks. I have also taken on responsibilities related to management of social media presences for clients, with special efforts being made to increase efficiency wherever possible. Within a week, I had transitioned 25 clients from manual to automatic posting, effectively freeing up 3-4 hours per week. I'm a very detail-oriented person, and I enjoy improving/fixing things. 
-        </p>
     
-     <h3>Accomplishments</h3>
-        <ul>
-            <li class="in-progress">
-                Bachelor's in Gerneral Studies
+    <div>
+        <h2>Consultant Site Intern</h2>
+        
+        <p>In April 2019, I started an internship at <strong>Cerner</strong>, one of the Nation’s leading providers of Electronic Medical Record. While there I worked mainly on ePrescribe, the ability for a provider to send scripts electronically instead of by fax or calling it in. I spent time working with other teams as well and tried to get a firm grasp of how the workflows operated. I used this understanding to create a guide to pass on to the interns who followed in my footsteps, so that they would have an easier time getting up to speed with the complicated system than I did.</p>
+        
+        
+        <h2>Paid Search Specialist</h2>
+        
+        <p>In January 2020, I started a full-time job at <strong>Caledon Virtual</strong> as a paid search specialist. This job involves data-analysis and knowledge of how to create and monitor ad campaigns on Google's advertising networks. I have also taken on responsibilities related to management of social media presences for clients, with special efforts being made to increase efficiency wherever possible. Within a week, I had transitioned 25 clients from manual to automatic posting, effectively freeing up 3-4 hours per week. I'm a very detail-oriented person, and I enjoy improving/fixing things.</p>
+    </div>
+        
+    </div>
+    
+    <article class=flex-lists>
+        
+        
+        
+        <div>
+            <h3>Skills:</h3>
+            <ol>
+                <li>EMR Maintenance and troubleshooting</li>
+                <li>Basic SQL</li>
+                <li>Social Media Maintenance and Automation</li>
+                <li>Paid Search Strategies</li>
+                <li>Basic Python</li>
+                <li>Organic Search Strategies</li>
+                <li>Basic Audio-Visual Design using Adobe Creative Cloud products</li>
+                <li>Basci HTML5 and CSS</li>
+            </ol>
+        </div>
+        <div>
+            <h3>Accomplishments</h3>
                 <ul>
-                    <li class="minors">Biology</li>
-                    <li class="minors">IT and Mathemtaics</li>
-                    <li class="minors">Physical Sciences</li>    
+                    <li class="in-progress">
+                        Bachelor's in Gerneral Studies
+                        <ul>
+                            <li class="minors">Biology</li>
+                            <li class="minors">IT and Mathemtaics</li>
+                            <li class="minors">Physical Sciences</li>    
+                        </ul>
+                        </li>    
+                    <li class="complete">Google Ad Certifications</li>
+                    <li class="complete">Google Analytics</li>  
                 </ul>
-            </li>    
-            <li class="complete">Google Ad Certifications</li>
-            <li class="complete">Google Analytics</li>  
-        </ul> 
-    
-        <h3>Skills:</h3>
-    <ol>
-        <li>EMR Maintenance and troubleshooting</li>
-        <li>Basic SQL</li>
-        <li>Social Media Maintenance and Automation</li>
-        <li>Paid Search Strategies</li>
-        <li>Basic Python</li>
-        <li>Organic Search Strategies</li>
-        <li>Basic Audio-Visual Design using Adobe Creative Cloud products</li>
-        <li>Basci HTML5 and CSS</li>
-    </ol>   
+        </div>
+    </article>  
     
     
 <footer>
