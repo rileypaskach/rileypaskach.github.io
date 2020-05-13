@@ -12,21 +12,27 @@
         
          <link rel="stylesheet"
         href="style.css">
+        <link rel="stylesheet"
+        href="nav.css">
         
         <style>
-                a {
-                font-size: 16pt;
-                color:firebrick;
-               text-decoration: underline
-                }
+            html{
+                font-size: 100%;
+            }
         </style>
+        
+        <link rel="shortcut icon" type="image/x-icon" href="../islt_7310/images/favicon_resume.ico">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
 <!--
 
 *****************************************************************************
 
-Title:  Homepage
+Title:  Resume
 
-Use: Index is the home page of my website
+Use: Houses my resume
 
 Author:  Riley Paskach
 
@@ -36,7 +42,7 @@ Developed: April 10, 2020
 
 Tested:  April 10, 2020; Passed on Firefox and Chrome browsers.
 
-Validated : 4/19/20 
+Validated : 5/8/20 
 
 ******************************************************************************
 
@@ -45,15 +51,80 @@ Validated : 4/19/20
 
     <body>     
 
-            <p>Riley Paskach Resume</p>
+        <header><h1>Resume</h1></header>
+        
+    <div class = flex-container>
+    
+        <div>
+                <nav>
+                    
+                    <label for = "menu-icon">&#9776;</label>
+                    <input type="checkbox" id="menu-icon"/>
+                    <ul class = "menu">
+                        <li><a href="../islt_7310/index.html">Home</a></li>
+                        <li><a href="placeholder" id="dropdown">Experience</a>
+                            <ul>
+                                <li><a href="#">Project 1</a></li>
+                                <li><a href="#">Project 2</a></li>
+                                <li><a href="#">Project 3</a></li>
+                            </ul>
+                        </li>    
+                        <li><a href="../islt_7310/accomplishments.html">Accomplishments</a></li>
+                        <li><a href="../islt_7310/resume.html" id="current">Resume</a></li>
+                        <li><a href="../islt_7310/personal_reflection.html">Reflection</a></li>
+                        <li><a href="../islt_7310/contact.html">Contact</a></li>
 
-            <p>Here is a link to my <a href="../islt_7310/docs/Paskachresume.pdf">Resume</a> that I've uploaded to this repository.</p>
+                    </ul>
+                </nav>
+            </div>
+        <div>
 
+            <p id="resume_link">Here is a link to my <a href="../islt_7310/docs/Paskachresume.pdf"> Resume </a> that I've uploaded to this repository.</p>
+            
+        </div>
+
+    </div>
+    
+    <article>        
+                <p>Below are links to the various ways that I can be contacted, feel free to connect with me on linkedin or send me an email!</p>
+                
+                <span id = "logo_links">
+                    <a href= "https://www.linkedin.com/in/rileypaskach"><img src = "images/LI-In-Bug.png" alt="The LinkedIn Logo" id = "linkedin"></a>
+                    <a href= "mailto:repxb2@mail.missouri.edu" id="email_symbol">&#9993;</a>
+                </span>
+                
+                <video max-width = "200" id = "video_resume"controls>
+                <source src = "video/Resume_compressed.mp4" type = "video/mp4">
+                </video> 
+                
+    </article>
+        
+     
+   
+    
+     
+        
+    
+        
     <footer>
         
- <p> Property of Riley Paskach (<a href="mailto:repxb2@mail.missouri.edu">repxb2@mail.missouri.edu</a>).</p> 
-    <p id="copyright">All Rights Reserved.</p>
+        <div class = box>
         
+<!--
+        <span>
+            <a href= "https://www.linkedin.com/in/rileypaskach"><img src = "images/LI-In-Bug.png" alt="The LinkedIn Logo" id = "linkedin"></a>
+        </span>
+-->
+        
+                    
+            <p> Property of Riley Paskach<a href="mailto:repxb2@mail.missouri.edu"><span id = "foot-email">&#9993;</span>repxb2@mail.missouri.edu</a>. All Rights Reserved.</p>
+            
+            <p>My phone number is <span>&#9742;</span>1+888-888-8888</p>
+            
+        </div>
+        
+        
+
     </footer>
     
     </body>
