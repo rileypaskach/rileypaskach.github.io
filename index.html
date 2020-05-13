@@ -16,9 +16,7 @@ School/Term:  University of Missouri, Spring 2020
 
 Developed: April 10, 2020
 
-Tested:  April 10, 2020; Passed on Firefox and Chrome browsers.
-
-Validated : 4/19/20 
+Validated : 5/8/20 
 
 ******************************************************************************
 
@@ -32,57 +30,101 @@ Validated : 4/19/20
         
         <link rel="stylesheet"
         href="nav.css">
+    
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet"> 
+        
+        <style>
+            html {font-size:100%;}
+        </style>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 
-<body>
+<body>   
     
-    <nav id="nav_list">
-        <ul>
-            <li><a href="../islt_7310/index.html" class="current">Index</a></li>
-            <li><a href="../islt_7310/accomplishments.html">Accomplishments</a></li>
-            <li><a href="resume.html">Resume</a></li>
+   
+    <header><h1 class = top-header>Riley Paskach</h1></header>
+  
+    <div class = flex-container>
+    
+        <div>
+                <nav>
+                    <!-- <label for = "toggle">&#9776;</label> -->
+                    <label for = "menu-icon">&#9776;</label>
+                    <input type="checkbox" id="menu-icon"/>
+                    <ul class = "menu">
+                        <li><a href="../islt_7310/index.html" id="current">Home</a></li>
+                        <li><a href="placeholder" id="dropdown">Experience</a>
+                            <ul>
+                                <li><a href="#">Project 1</a></li>
+                                <li><a href="#">Project 2</a></li>
+                                <li><a href="#">Project 3</a></li>
+                            </ul>
+                        </li>    
+                        <li><a href="../islt_7310/accomplishments.html">Accomplishments</a></li>
+                        <li><a href="../islt_7310/resume.html">Resume</a></li>
+                        <li><a href="../islt_7310/personal_reflection.html">Reflection</a></li>
+                        <li><a href="../islt_7310/contact.html">Contact</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+        <div>
+        
+            <p>Hello all, my name is Riley. I am a full-time student at MU while also working a full-time digital marketing job here in Columbia. I spent a long time thinking I’d go into Biology for a living, but recently I decided that I wanted to pursue other interests as a career. I work with landing pages, domains, and web applications every day, so I’m hoping that this class will give me more insight into what I’m already doing, while also letting me do more on the development side of things.</p> 
             
-        </ul>
-    </nav>
-    <h1>Riley Paskach Resume</h1>
-        <p>Hello all, my name is Riley. I am a full-time student at MU while also working a full-time digital marketing job here in Columbia. I spent a long time thinking I’d go into Biology for a living, but recently I decided that I wanted to pursue other interests as a career. I work with landing pages, domains, and web applications every day, so I’m hoping that this class will give me more insight into what I’m already doing, while also letting me do more on the development side of things. I’m currently also learning Python and have tried learning HTML in the past, but it wasn’t as applicable to me at that time and I didn’t stick with it. At the moment the only hobby I really have time for is playing video games, but when I have enough spare time on my hands I like to tinker with basic electronics like microcontrollers.
-        </p>
-    
-    <p>In April 2019 I started an internship at Cerner, one of the Nation’s leading providers of Electronic Medical Record software. I then transitioned to a full-time job in marketing here in Columbia. In January of 2020, I accepted a Paid Search Specialist position at Caledon Virtual, a marketing company here in Columbia Missouri. I current.</p>
-    
-        <img src="images/Profile_Pic.jpg" alt="Picture of me in front of a brick wall" width="169" height="225">
+            <p>I’m currently also learning Python and have tried learning HTML in the past, but it wasn’t as applicable to me at that time and I didn’t stick with it. At the moment the only hobby I do much of is playing video games, but when I have enough spare time on my hands I like to tinker with basic electronics like microcontrollers.
+            </p>
 
-    <h3>Skills:</h3>
-    <ol>
-        <li>EMR Maintenance and troubleshooting</li>
-        <li>Basic SQL</li>
-        <li>Social Media Maintenance and Automation</li>
-        <li>Paid Search Strategies</li>
-        <li>Basic Python</li>
-        <li>Organic Search Strategies</li>
-        <li>Basic Audio-Visual Design using Adobe Creative Cloud products</li>
-        <li>Basci HTML5 and CSS</li>
-    </ol>    
+            <p>In April 2019 I started an internship at Cerner, one of the Nation’s leading providers of Electronic Medical Record software. I then transitioned to a full-time job in marketing here in Columbia. In January of 2020, I accepted a Paid Search Specialist position at Caledon Virtual, a marketing company here in Columbia Missouri.</p>
+        </div>
 
- <h3>Accomplishments</h3>
-        <ul>
-            <li class="in-progress">
-                Bachelor's in Gerneral Studies
-                <ul>
-                    <li class="minors">Biology</li>
-                    <li class="minors">IT and Mathemtaics</li>
-                    <li class="minors">Physical Sciences</li>    
-                </ul>
-            </li>    
-            <li class="complete">Google Ad Certifications</li>
-            <li class="complete">Google Analytics</li>  
-        </ul> 
+            
+
+    </div>
+        
+    <article class=flex-lists>
+        <div>
+            <h3>Skills:</h3>
+            <ol>
+                    <li>EMR Maintenance and troubleshooting</li>
+                    <li>Basic SQL</li>
+                    <li>Social Media Maintenance and Automation</li>
+                    <li>Paid Search Strategies</li>
+                    <li>Basic Python</li>
+                    <li>Organic Search Strategies</li>
+                    <li>Basic Audio-Visual Design using Adobe Creative Cloud products</li>
+                    <li>Basic HTML5 and CSS</li>
+            </ol>  
+            
+        </div>
+
+
+        <div>
+            <h3>Accomplishments</h3>
+                    <ul>
+                        <li class="in-progress">
+                            Bachelor's in Gerneral Studies
+                            <ul>
+                                <li class="minors">Biology</li>
+                                <li class="minors">IT and Mathemtaics</li>
+                                <li class="minors">Physical Sciences</li>    
+                            </ul>
+                        </li>    
+                        <li class="complete">Google Ad Certifications</li>
+                        <li class="complete">Google Analytics</li>  
+                    </ul> 
+        </div>
+        <div><img src="images/Profile_Pic.jpg" alt="Picture of me in front of a brick wall" width="169" height="225" id = "headshot"></div>
+        
+    </article>
     
-<blockquote><i>"The difficult part in an argument is not to defend one's opinion but rather to know it."</i> - Andre Maurois</blockquote>
+    <blockquote><i>"The difficult part in an argument is not to defend one's opinion but rather to know it."</i> - Andre Maurois</blockquote>
     
 <footer>
-    <p> Property of Riley Paskach (<a href="mailto:repxb2@mail.missouri.edu">repxb2@mail.missouri.edu</a>).</p> 
-    <p id="copyright">All Rights Reserved.</p>
+    <p> Property of Riley Paskach (<a href="mailto:repxb2@mail.missouri.edu">repxb2@mail.missouri.edu</a>). All Rights Reserved.
+    </p>
 </footer>
     
 </body>
