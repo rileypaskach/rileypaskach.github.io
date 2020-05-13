@@ -28,8 +28,7 @@ h3 {
 }
 
 body ol {
-    flex:auto;
-    
+    flex:auto;    
 }
 
 
@@ -50,25 +49,55 @@ body {
     display:flex;
 }
 
+.box {
+    width: 100%;
+    max-height: 200px;
+    padding:1rem;
+    margin: 1rem;
+    background-image: url(images/black-sand-dunes-2387793.jpg);
+    background-size:cover;
+/*    text-align: center;*/
+    display:flex;
+    justify-content: space-between;
+       
+}
+
 
 #resume_link {
     text-align: center;
     font-size: 16pt;
 }
 
-main p {
+p > a{
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;  
+}
+
+p {
     font-family: "Times New Roman", Times, serif;
     font-size: 1rem;
-    margin: 4px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 4px;
     border-bottom: 3px solid #ABD5FF;
     width: auto;
-    display: flex;
+    max-width: 70%;
     flex-grow:2;
-/*    background-color:*/
+    justify-content: center;
+    align-content: center;
+    text-align: center;
 }
 
 p:first-letter {font-weight: bold;}
+
+/*
+p {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    
+}
+*/
 
 #headshot {
     max-height: 250px;
@@ -76,8 +105,7 @@ p:first-letter {font-weight: bold;}
     float:right;
     padding: 2em;
     display: flex;
-    object-fit: contain;
-    
+    object-fit: contain;   
 }
 
 #logo_links {
@@ -101,6 +129,24 @@ p:first-letter {font-weight: bold;}
     padding: 5px;
     font-size: 5rem;
     justify-content: center;
+}
+
+#video_resume {
+    margin: auto;
+      max-height: 13rem;
+    min-height: 8rem;
+    padding: 2em;
+    display: flex;
+    object-fit: contain;
+    align-self: center;
+}
+
+#foot-email {
+    margin-right: 0.2rem;
+}
+
+article > p {
+    
 }
 
 /*Quote at bottom of page*/
