@@ -216,6 +216,23 @@ a {text-decoration: none;}
         text-shadow: none !important;
     }
     
+    .flex-lists {
+        color: black;
+    }
+    
+    a[href] {
+        color: black;
+    }
+    
+    li.minors,
+    ol,
+    body,
+    h1,
+    h2,
+    h3 {
+        color: black;
+    }
+    
     nav,
     nav>ul,
     nav>ol {
