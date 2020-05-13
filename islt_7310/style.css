@@ -2,6 +2,20 @@
 /* Passed validation on 5/8/20 */
 
 
+
+@font-face { 
+
+font-family: 'Playfair Display', serif; /*this is where we give our font a name so we can use it!*/
+
+/*src: url("font.ttf"); remember this is how we link to files in CSS!*/
+
+}
+
+.top-header {
+    font: 2rem "Playfair Display";
+    
+}
+
 h1 {
     text-align:center;
     color: #556A80;
@@ -75,6 +89,7 @@ p > a{
 
 p {
     font-family: "Times New Roman", Times, serif;
+/*    font-family: "Playfair Display";*/
     font-size: 1rem;
     margin-left: auto;
     margin-right: auto;
@@ -190,5 +205,40 @@ a:visited {color: #DCDCDC;}
 a:active {color: #C2856D;}
 
 a {text-decoration: none;}
+
+/*Print stylesheet*/
+
+@media print {
+    * {
+        background:transparent; !important;
+        color: #000; !important
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+    
+    nav,
+    nav>ul,
+    nav>ol {
+        display: none;
+    }
+    
+    a[href^="http:"]::after {
+        content: " ["attr(href)"]";
+        color: blue;
+    }
+    
+    @page {
+        margin: 0.5cm;
+    }
+    
+    @page :first {
+        margin-top: 1cm;
+    }
+    
+    .top-header {
+    font: 2rem "Playfair Display";
+    }
+    
+}
 
 
