@@ -60,7 +60,12 @@ body {
 }
 
 .flex-lists {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
     display:flex;
+    align-content: space-between;
+    
 }
 
 .box {
