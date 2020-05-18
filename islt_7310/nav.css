@@ -143,6 +143,10 @@ label {
 	}
     */
     
+    table {
+        width: 400px
+    }
+    
     #menu-icon:checked + ul.menu{
         display:block;
         position:inherit;

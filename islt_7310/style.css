@@ -64,6 +64,34 @@ body {
     color: #556A80;
 }
 
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    width: 1000px
+}
+
+thead {
+    color: white;
+    background-color:#556A80;
+}
+
+td {
+    color:white;
+    background-color: #7C7E80;
+}
+
+td:nth-child(even) {
+    background-color:#ABBBCC; 
+}
+
+caption {
+    caption-side: bottom;
+    text-decoration: underline;
+    
+}
+
 .sections {
     border-bottom: none;   
 }
