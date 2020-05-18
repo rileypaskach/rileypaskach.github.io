@@ -48,7 +48,29 @@ Validated : 5/8/20
 <body>   
     
    
-    <header><h1 class = top-header>Riley Paskach</h1></header>
+    <header><h1 class = top-header>Riley Paskach</h1>
+    
+    <script LANGUAGE="JavaScript">
+<!--
+
+//Bread crumb script - Kevin Lynn Brown
+//Duplicate directory names bug fix by JavaScriptKit.com
+//Visit JavaScript Kit (http://javascriptkit.com) for script
+
+var path = "";
+var href = document.location.href;
+var s = href.split("/");
+for (var i=2;i<(s.length-1);i++) {
+path+="<A HREF=\""+href.substring(0,href.indexOf("/"+s[i])+s[i].length+1)+"/\">"+s[i]+"</A> / ";
+}
+i=s.length-1;
+path+="<A HREF=\""+href.substring(0,href.indexOf(s[i])+s[i].length)+"\">"+s[i]+"</A>";
+var url = window.location.protocol + "//" + path;
+document.writeln(url);
+//-->
+</script>
+        
+</header>
   
     <div class = flex-container>
     
@@ -141,6 +163,8 @@ Validated : 5/8/20
             <p> Property of Riley Paskach<a href="mailto:repxb2@mail.missouri.edu"><span id = "foot-email" class = "footer_pic">&#9993;</span><span class = "footer_pic_big">&#9993;</span>repxb2@mail.missouri.edu</a>. All Rights Reserved.</p>
             
             <p>My phone number is <span class = "footer_pic">&#9742;</span><span class = "footer_pic_big">&#9742;</span>1+888-888-8888</p>
+       
+            <p align="left">This free script provided by <a href="http://javascriptkit.com">JavaScript Kit</a></p>
             
         </div>
 </footer>
