@@ -144,7 +144,22 @@ label {
     */
     
     table {
-        width: 400px
+        width: 400px;
+    }
+    
+    form {
+    width:175px;
+    height: auto;    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+    }
+    
+    .form_label {
+        display: block;
+        font-size: 1rem;
     }
     
     #menu-icon:checked + ul.menu{
