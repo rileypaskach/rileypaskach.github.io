@@ -172,6 +172,10 @@ label {
         margin: 0;
     }
     
+    
+    .flex-lists {
+        flex-direction: column;
+    }
 
 }
 

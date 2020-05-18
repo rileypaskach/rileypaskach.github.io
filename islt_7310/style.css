@@ -119,8 +119,13 @@ form {
     margin-right: auto;
     justify-content: center;
     display:flex;
-    align-content: space-between;
+/*    align-content:space-around;*/
+/*    width: auto;*/
+/*    align-items:center;*/
+/*    height: auto;*/
+    padding: 2px;
     
+ 
 }
 
 .footer_pic_big {
@@ -151,7 +156,7 @@ form {
 
 #resume_link {
     text-align: center;
-    font-size: 16pt;
+    font-size: 1.1rem;
 }
 
 p > a{
@@ -162,7 +167,7 @@ p > a{
 p {
     font-family: "Times New Roman", Times, serif;
 /*    font-family: "Playfair Display";*/
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-left: 2rem;
     margin-right: auto;
     padding: 4px;
@@ -188,9 +193,9 @@ p {
 #headshot {
     max-height: 250px;
     min-height: 200px;
-    float:right;
+/*    float:right;*/
     padding: 2em;
-    display: flex;
+/*    display: flex;*/
     object-fit: contain;   
 }
 
