@@ -1,0 +1,191 @@
+/*CSS for nav menu*/
+
+/* Validated on 5/8/20 */
+
+/*format and position the main navigation menu*/
+
+
+nav {
+    width: auto;
+    height: 310px;
+    float: left;
+    display:flex;
+    flex-direction:column;
+    flex-grow: 1;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;    
+}
+
+nav>ul li {
+width: 150px; /*this is important to set so our drop-down doesn't go across the page*/
+position:relative; /*we must add a position to our main navigation bar so we can position a drop-down properly */
+text-align: center;
+font-weight: bold;
+color: dimgray;
+}
+
+/*
+nav ul li {
+margin-bottom: 2px;
+}*/
+
+nav a {
+text-decoration: none;
+display: block;
+border: 3px;
+padding: 15px 15px 15px 15px;
+margin-right: 10px;
+margin-bottom: 3px;
+}
+
+/*format all navigation <a> elements*/
+nav a:link{
+    color: #F7FBFF;
+    background-color: #ABBBCC;
+/*    color: #556A80;*/
+}
+nav a:hover, nav a:focus {
+    background-color: #ABD5FF;
+}
+
+#current{
+    background-color: #7C7E80;
+    color: #F7FBFF;
+}
+
+
+/*position sub-menu or drop-down*/
+nav ul>li ul {
+position: absolute;
+margin-top: -49px; /*I adjusted this so your nav drop-down lines up better*/
+margin-left: 100%;
+display: none;
+}
+
+/*special hover to display the drop-down*/
+nav>ul>li:hover>ul{
+    display:block;
+    
+}
+
+
+
+
+nav {
+	float: left;
+	padding: 0%;
+}
+#menu-icon {
+	/*background: url(images/menu-icon.png) no-repeat center;*/
+	display: none; /*this should be none instead of hidden... */
+/*	width: 32px;*/
+/*	height: 32px;     Removed because this is the checkbox and doesn't need defined dimensions   */
+    
+}
+
+label {
+    font-size: 2em;
+    display: none;
+}
+
+
+
+/* Mobile menu adjustment */
+
+
+/*}*/
+
+@media only screen and (max-width: 640px) {
+    body { /*always organize by the largest container */
+        font-size: 1rem;
+    }
+    
+    header {
+		position: relative; /*the position can't be absolute because you haven't given a position to the container for header-- changing this to relative fixes this issues*/
+	}
+    
+	#menu-icon {
+		display: none;
+        position: absolute;
+	}
+    
+    label {
+        display:flex;
+        width: 32px;
+        cursor: pointer;
+    }
+    
+   
+	ul.menu {
+		display: none;
+/*		position: ;*/
+		padding: 2px;
+		left: 0;
+		top: 76px;
+		width: 100%;
+        margin: 0;
+	}
+   
+	/*nav:hover ul {
+		display: block;
+	}*/
+ 
+    /*
+	nav li {
+		text-align: center;
+		width: auto;
+		padding: 2px;
+		margin: 0px;
+	}
+    */
+    
+    table {
+        width: 400px;
+    }
+    
+    form {
+    width:175px;
+    height: auto;    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+    }
+    
+    .form_label {
+        display: block;
+        font-size: 1rem;
+    }
+    
+    #menu-icon:checked + ul.menu{
+        display:block;
+        position:inherit;
+		padding: 2px;
+		left: 0;
+		top: 76px;
+		width: auto;
+        margin: 0;
+    }
+    
+    
+    .flex-lists {
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
