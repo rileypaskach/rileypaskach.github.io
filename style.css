@@ -66,17 +66,24 @@ nav ul {
     }
     
     .mobileimage {
-/*
-        width: auto;
-*/
+
+        display: block;
+        margin-bottom: 2rem;
+
+    }
+    .findingissues {
+
+        display: flex;
+    
+
     }
 
     
 }
 
-@media (min-width: 380px) {
+/*@media (min-width: 380px) {
     
-    /*.mobile-intro-small{
+    .mobile-intro-small{
         display: none;
     }
     .mobile-intro {
@@ -84,17 +91,24 @@ nav ul {
         padding-top: 1rem;
     }*/
 
-}
+
 @media (min-width: 500px) {
+/*
     .large-jumbotron {
         display: block;
         min-height: 300px;
         background-image: url(Vail_jumbotron_large.jpg);
     }
+    .mobileimage {
+
+        display: none;
+
+    }
     .mobile-jumbotron {
         display: none;
 
     }
+*/
     
     .hero__row {
         width: ;
@@ -112,6 +126,12 @@ nav ul {
 
     .desktop-columns {
         display: block;
+    }
+    
+    .mobileimage {
+
+        display: none;
+
     }
     
     .mobile-intro {

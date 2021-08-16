@@ -42,6 +42,12 @@ Validated : 8/14/21
     <!-- jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+    <script>
+    $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+    });
+    </script>
 
    
     <header class="sticky-top">
@@ -77,68 +83,74 @@ Validated : 8/14/21
                     <h1 class="text-center">Welcome to my website!</h1>
         
                     <p>
-                        My name is Riley Paskach, and this is my resume website where you can find information about my professional life, as well as some of my relevant hobbyist pursuits. Feel free to also visit my <a href= "https://www.linkedin.com/in/rileypaskach/" target="_blank">LinkedIn</a> and <a href = "https://github.com/rileypaskach">Github</a> accounts if you are interested in seeing more of what I'm doing!
+                        My name is Riley Paskach, and this is my resume website where you can find information about my professional life. Feel free to also visit my <a href= "https://www.linkedin.com/in/rileypaskach/" target="_blank">LinkedIn</a> and <a href = "https://github.com/rileypaskach">Github</a> accounts if you are interested in seeing more of what I'm doing! The site is still in-progress, so I apologize if anything isn't working properly!
                     </p>
                 
                 </div>
                 <div class="col">
                 <!--<div class = "container">-->
                    
-            <img src=".../Site_images/Riley_Paskach_sm_200.jpg" class="mobileimage shadow rounded float-right" alt="Headshot of Riley Paskach for mobile devices">
-            <img src=".../Site_images/Riley_Paskach_lg_400.jpg" class="largeimage shadow-lg border rounded float-right" alt="Headshot of Riley Paskach for large devices">
-                            <!--Testing out some column layouts to see if it can be used for a good Hero image-->
-<!--
-        </div>
--->
+            <img src="/Site_images/Riley_Paskach_sm_200.jpg" class="mobileimage shadow rounded mx-auto d-block d-md-none" alt="Headshot of Riley Paskach for mobile devices">
+            <img src="/Site_images/Riley_Paskach_lg_400.jpg" class="largeimage shadow-lg border rounded float-right d-md-block" alt="Headshot of Riley Paskach for large devices">
+
                 </div>
             </div>
         </div>
        
         
         </div>
-                       
         <div>
-        <div class = "container" style="padding-bottom: 3rem; padding-top: 3rem;">
-            <!--<div class= "card-body">-->
-            <h2 class="text-center">Who I Am</h2>
+        
+        <div class="container">
+            <div class="row align-items-center hero__row">
+                <div class="col">
+                <!--<div class = "container">-->
+                   
+                     <img src="/Site_images/Testing_solutions.png" class="card-img-top embed-responsive-item" alt="...">
 
-            <p>I am a Digital Marketing Strategist located in Philadelphia, PA. I live here with my long-time girlfriend, Alyssa Ripley, and my cat, Tinker. I have been in marketing for just over a year now, and I really enjoy being in such a dynamic field with so many different things to do. Digital marketing overlaps heavily with data analytics and web development, so I am always working to develop and improve my skills in those areas.
-            </p> 
-
+                </div>
+                <div class="col">
+                    
+                    <h2 class="text-center">Who I Am</h2>
+        
+                    <p>
+                        I am a 24-year-old living in Philadelphia with my long-time girlfriend, Alyssa Ripley, and my cat, Tinker. I hold a BA in <a data-toggle="tooltip" title = "General Studies degrees are a collection of 3 minors.">General Studies</a> from the University of Missouri, where my 3 minors were Biology, Physical Sciences, and Math + IT.
+                    </p>
+                
+                </div>
+                
             </div>
-<div class="container">
-    <div class="container" style="padding-bottom: 3rem;">
-    <h2 class="text-center">What I Do</h2>
-    <p>My job is to help connect people to the online audience they are trying to reach. The internet is a competitive landscape, and many people have a ton to offer the world if they could just gain enough traction to get started. There is nothing more gratifying than being able to bridge that gap and bring people the traffic they need. I have worked on paid and organic campaigns for clients of all types, and I have found that the process outlined below will reveal the leaky spots in any conversion funnel.</p>
-    </div>
-<div class="card-group shadow">
-  <div class="card">
-      <!--<div class="embed-responsive embed-responsive-16by9">-->
-    <img src="/Site_images/Finding_issues_2.png" class="card-img-top embed-responsive-item" alt="...">
-      <!--</div>-->
-    <div class="card-body">
-      <h3 class="card-title">Identify Goals and Investigate Problems</h3>
-        <p class="card-text">No matter the client, the first step will be to define what a <strong>"Conversion"</strong> looks like for them. Someone new to digital marketing might have no idea, but for experienced clients we may need to start off discussing what their online conversions look like in the real world, and how we can make adjustments to improve results. My next immediate step is to deep-dive into their <strong>Analytics</strong>. Conversion totals are the end of a long journey, and it's important to determine if anyone is getting lost along the way</p>
-    </div>
-  </div>
-  <div class="card">
-      <!--<div class="embed-responsive embed-responsive-16by9">-->
-    <img src="/Site_images/Testing_solutions.png" class="card-img-top embed-responsive-item" alt="...">
-      <!--</div>-->
-    <div class="card-body">
-      <h3 class="card-title">Test Solutions</h3>
-        <p class="card-text">This part is a bit more difficult to outline, even thematically. The variation of goals and current performance will mean that this part could be almost anything. <strong>SEO</strong> is always part of the solution because you should be working on your organic ranking at all times. If budget allows, there is always a <strong>Paid Search</strong> strategy that will help someone reach their goals. </p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="/Site_images/Momentum.png" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h3 class="card-title">Build on Momentum</h3>
-        <p class="card-text">By analyzing site traffic data, I'll gain new insights that I'll use to further refine the overall marketing strategy. Each new iteration is an opportunity to learn more and improve on our digital marketing efforts. I will review Heatmaps and A/B tested pages, which are incredibly useful tools for <strong>CRO</strong>. I do things this way because I am able to avoid wasting both data and time; improvements ripple outward and feed into more improvements.</p>
-    </div>
-  </div>
-</div>
-            </div> 
+        </div>
+        <div>
+        
+        <div class="container shadow">
+            <div class="row align-items-center hero__row">
+                <div class="col">
+                    
+                    <h2 class="text-center">What I Do</h2>
+        
+    <p>
+        I am a Paid Media Associate at Seer Interactive, a marketing agency based out of Philadelphia and San Diego. I make ads and help develop strategies for boosting paid media revenue. I make ads in Google and Bing, and I use Data Studio + Power BI to make data more digestable. 
+    </p>
+    <p>
+        Digital marketing overlaps heavily with data analytics and web development, so I am always working on improving those skill sets as well. Making ads at scale involves quite a bit of spreadsheet work, and I'm always working to improve my Excel acumen. 
+    </p>
+    <p>
+        I've found that Python can be an excellent tool for a digital marketer to have in their back pocket. 
+    </p>
+                
+                </div>
+                <div class="col">
+                   
+            <img src="/Site_images/Finding_issues_2.png" class="findingissues card-img-top embed-responsive-item" alt="...">
+
+                </div>
+            </div>
+        </div>
+        
+        </div>               
+        <div>
+        
     
         <div class = "container" style="padding-top: 3rem;">
             
