@@ -103,6 +103,14 @@ a[href] {
     .desktop-what-i-do {
         display: none;
     }
+    .footer-icons {
+        max-height: 3rem;
+    }
+    footer {
+        padding: 1rem;
+/*        margin: 2rem;*/
+        background-color: #c9cacb;
+    }
 
     
 }
