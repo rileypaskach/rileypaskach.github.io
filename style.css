@@ -39,37 +39,6 @@ a[href] {
     background: #558dbb;
 }
 
-/*Animation 1
-/ Underline - Inside Out
-*/
-/*
-.underline-effect {
-	position: relative;
-	&:before {
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 2px;
-		bottom: 0;
-		margin: -5px 0;
-		background-color: white;
-		visibility: hidden;
-		transform: scaleX(0);
-		transition: all 0.4s ease-in-out 0s;
-	}
-	&:hover:before {
-		visibility: visible;
-		transform: scaleX(1);
-	}
-}
-*/
-
-/*.card-img-top {
-    width: 100%;
-    height: 15vw;
-    object-fit: cover;
-}*/
-
 
 @media (min-width: 0px) {
     .largeimage {
@@ -130,6 +99,9 @@ a[href] {
     }
     .skills-mobile h2 {
         text-align: center;
+    }
+    .desktop-what-i-do {
+        display: none;
     }
 
     
@@ -203,6 +175,12 @@ a[href] {
     .skills-mobile {
         display: none;
         
+    }
+    .desktop-what-i-do {
+        display: block;
+    }
+    .mobile-what-i-do {
+        display: none;
     }
     
 }
