@@ -39,6 +39,18 @@ a[href] {
     background: #558dbb;
 }
 
+.projects-h1 {
+    padding: 1rem;
+}
+.projects-p {
+    padding: 1rem;
+}
+.in-progress-div {
+    margin-bottom: 2rem;
+}
+#accordion {
+    padding-bottom: 2rem;
+}
 
 @media (min-width: 0px) {
     .largeimage {
